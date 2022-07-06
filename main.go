@@ -229,7 +229,7 @@ func summaryMessage(base, head int) string {
 	}
 
 	if base > head {
-		return fmt.Sprintf("Coverage decreased by `%.2f%%`. :bell: Shame :bell:", float64(base-head)/100)
+		return fmt.Sprintf("Coverage decreased by `%.2f%%`", float64(base-head)/100)
 	}
 
 	return fmt.Sprintf("Coverage increased by `%.2f%%`. :medal_sports: Keep it up :medal_sports:", float64(head-base)/100)
